@@ -11,4 +11,4 @@ This repository is divided in two main parts:
         3. [`WORLDCUP_Feature_Selection.ipynb`](https://github.com/SergioJF10/MLT-ESI-UCLM_CIS/blob/main/worldcup/WORLDCUP_Feature_Selection.ipynb): Feature Selection process applying both, feature clustering techniques and domain knowledge.
     - *Last Update*: 1st November 2022.
 
-2. `ritcher`: In this folder, we would find all the Google Colab notebooks, pdf reports for the study and data necessary for the **Supervised Learning** Classification tasks.
+2. [`ritcher`](https://github.com/SergioJF10/MLT-ESI-UCLM_CIS/tree/main/ritcher): In this folder, we would find all the Google Colab notebooks, pdf reports for the study and data necessary for the **Supervised Learning** Classification tasks.
