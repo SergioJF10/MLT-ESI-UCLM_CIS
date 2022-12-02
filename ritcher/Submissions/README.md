@@ -3,3 +3,5 @@ In this folder we will be adding all the submissions we made along the developme
 
 - `submission_NaiveBayes` [$F1_{micro} = 0.5052$]: _Submitted on 2022-11-25 10:20:58 UTC_.
     - Includes the `damage_grade` predicted for the test sample using a Naives Bayes model, implemented with Bernoulli approach. 
+- `submission_knn` [$F1_{micro} = 0.5801$]: _Submitted on 2022-12-02 13:22:11 UTC_.
+    - Includes the `damage_grade` predicted for the test sample using a kNN model, implemented with normalized data, a feature selection of 19 variables, and a total of $k=128$ neighbors. 
