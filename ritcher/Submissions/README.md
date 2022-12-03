@@ -8,6 +8,6 @@ In this folder we will be adding all the submissions we made along the developme
 - `submission_knn_iter2` [$F1_{micro} = 0.6938$]: _Submitted on 2022-12-03 10:12:01 UTC_.
     - Includes the `damage_grade` predicted for the test sample using a kNN model, implemented with normalized data, a feature selection of 7 variables, and a total of $k=16$ neighbors.
 - `submission_dt` [$F1_{micro} = 0.6482$]: _Submitted on 2022-12-03 15:56:09 UTC_.
-    - Includes the `damage_grade` predicted for the test sample using a decision tree model, with all the features, and $max_depth=25$. 
+    - Includes the `damage_grade` predicted for the test sample using a DT model, with all the features, and $depth=25$. 
 - `submission_dt` [$F1_{micro} = 0.6486$]: _Submitted on 2022-12-03 15:50:25 UTC_.
-    - Includes the `damage_grade` predicted for the test sample using a decision tree model, a feature selection of 7 variables, and $max_depth=23$. 
+    - Includes the `damage_grade` predicted for the test sample using a DT model, a feature selection of 7 variables, and $depth=23$. 
