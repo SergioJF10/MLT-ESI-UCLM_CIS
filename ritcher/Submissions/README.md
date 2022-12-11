@@ -17,7 +17,7 @@ In this folder we will be adding all the submissions we made along the developme
     - Includes the `damage_grade` predicted for the test sample using XgBoost ensembling algorithm and hyperparametrization optimized by means of the RandomizedSearch cross validation algorithm.
 - `submission_stk` [$F1_{micro} = 0.7166$]: _Submitted on 2022-12-09 12:56:18 UTC_.
     - Includes the `damage_grade` predicted for the test sample using StackingClassifier with kNN (uniform) and Decision Trees (iter2) as weak learners and as meta learner a Logistic Regression.
-- `submission_xgboost` [$F1_{micro} = 0.7166$]: _Submitted on 2022-12-10 13:02:54 UTC_.
+- `submission_xgboost` [$F1_{micro} = 0.6990$]: _Submitted on 2022-12-10 13:02:54 UTC_.
     - Includes the `damage_grade` predicted for the test sample using the ensemble model based on decision trees XgBoost.
 - `submission_xg_gscv` [$F1_{micro} = 0.7213$]: _Submitted on 2022-12-09 14:41:45 UTC_.
     - Includes the `damage_grade` predicted for the test sample using the ensemble model based on decision trees XgBoost using GridSearchCV hyperparametrization algorithm.     
