@@ -21,3 +21,5 @@ In this folder we will be adding all the submissions we made along the developme
     - Includes the `damage_grade` predicted for the test sample using the ensemble model based on decision trees XgBoost.
 - `submission_xg_gscv` [$F1_{micro} = 0.7213$]: _Submitted on 2022-12-09 14:41:45 UTC_.
     - Includes the `damage_grade` predicted for the test sample using the ensemble model based on decision trees XgBoost using GridSearchCV hyperparametrization algorithm.     
+- `submission_vote` [$F1_{micro} = 0.7144$]: _Submitted on 2022-12-15 00:58:53 UTC_.
+    - Includes the `damage_grade` predicted for the test sample using VotingClassifier with kNN (uniform), Decision Trees (iter2) and StackingClassifier as baseline models using hard vote.
