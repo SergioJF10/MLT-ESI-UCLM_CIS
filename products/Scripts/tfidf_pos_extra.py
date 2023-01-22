@@ -4,10 +4,11 @@ import json
 import warnings
 from tqdm import tqdm
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import f1_score, precision_score, recall_score
+from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import VotingClassifier
 
@@ -104,6 +105,11 @@ preds = mngb_model.predict(x_test_tfidf)
 print(f'\t --> F1 Score for the model: {f1_score(y_test, preds, average="micro")}')
 print(f'\t --> Precision for the model: {precision_score(y_test, preds, average="micro")}')
 print(f'\t --> Recall for the model: {recall_score(y_test, preds, average="micro")}')
+cm = confusion_matrix(y_test, list(preds), labels=mngb_model.classes_)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=mngb_model.classes_) 
+disp.plot()
+plt.savefig('../Reports/Figures/S4_Naive.png')
+print('\t --> Confusion Matrix saved as ../Reports/Figures/S4_Naive.png')
 
 # Decision Tree
 print('Training the Decision Tree model')
@@ -112,6 +118,12 @@ preds = dt_model.predict(x_test_tfidf)
 print(f'\t --> F1 Score for the model: {f1_score(y_test, preds, average="micro")}')
 print(f'\t --> Precision for the model: {precision_score(y_test, preds, average="micro")}')
 print(f'\t --> Recall for the model: {recall_score(y_test, preds, average="micro")}')
+cm = confusion_matrix(y_test, list(preds), labels=mngb_model.classes_)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=mngb_model.classes_) 
+disp.plot()
+plt.savefig('../Reports/Figures/S4_Decision.png')
+print('\t --> Confusion Matrix saved as ../Reports/Figures/S4_Decision.png')
+
 
 # Voting Classifier
 print('Training the Voting Classifier model')
@@ -121,3 +133,8 @@ preds = voting_model.predict(x_test_tfidf)
 print(f'\t --> F1 Score for the model: {f1_score(y_test, preds, average="micro")}')
 print(f'\t --> Precision for the model: {precision_score(y_test, preds, average="micro")}')
 print(f'\t --> Recall for the model: {recall_score(y_test, preds, average="micro")}')
+cm = confusion_matrix(y_test, list(preds), labels=mngb_model.classes_)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=mngb_model.classes_) 
+disp.plot()
+plt.savefig('../Reports/Figures/S4_Voting.png')
+print('\t --> Confusion Matrix ../Reports/Figures/saved as S4_Voting.png')
