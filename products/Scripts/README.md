@@ -6,7 +6,6 @@ The files within this folder are:
 - `requirements.txt`: File with the requirements needed to execute the scripts as well as the appropriate and necessary versions.
 - `tfidf_pos.py`: Script with the TF-IDF vectorization process, combined with POS tagging and undersampling to reduce the imbalances. Also, training and testing of 3 models (Naive Bayes, Decision Tree and Voting Classifier).
 - `tfidf_pos_extra.py`: Script with the TF-IDF vectorization process, combined with POS tagging, extra features and undersampling to reduce the imbalances. Also, training and testing of 3 models (Naive Bayes, Decision Tree and Voting Classifier).
-- `tfidf.py`: Script with the TF-IDF vectorization process applied with undersampling to reduce the imbalances. Also training and testing of 2 models (Naive Bayes and Decision Tree).
 
 ## Instructions 📎
 For executing this scripts we recommend the following steps:
