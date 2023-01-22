@@ -1,4 +1,4 @@
-# Worldcup Project
+# Products Project
 ## Task 📋
 This task was related with Natural Language Processing (NLP) concepts and techniques, corresponding with the laboratory part of this subject. Regarding the deriverable, the problem was divided in these main parts:
 
